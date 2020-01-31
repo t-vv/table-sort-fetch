@@ -1,0 +1,40 @@
+html {font-size:100%;line-height:1.4;font-family:Arial, Helvetica, sans-serif;background:#fff;}
+
+.data-financial a:link, .data-financial a:visited {color:#147DAD;text-decoration:none;font-size:1.1rem}
+.data-financial a:focus, .data-financial a:hover, .data-financial a:active {text-decoration:underline;}
+.data-financial button {cursor:pointer;border:none;background:#fff;}
+
+/* Accessibility */
+.data-financial .sr-only {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);white-space: nowrap; border: 0;}
+.data-financial .hidden {display:none;}
+
+.data-financial .sortable {border:.3rem solid #147DAD;border-collapse: collapse;min-width:300px;width:100%;max-width:360px;background:#fff;}
+.data-financial .sortable caption {text-align:left;padding:6px 0;font-weight:400;}
+
+.data-financial .sortable th {border-bottom:1px solid #ccc;background: #fff;color: #333;white-space: nowrap;vertical-align: bottom;}
+.data-financial .sortable th:first-child {text-align:left;}
+.data-financial .sortable th:last-child {text-align:right;}
+.data-financial .sortable th button {width:100%;text-align: left;padding:0 12px 4px 12px;min-height:3.1rem; font-size:1rem;font-weight:400;}
+.data-financial .sortable th button span {display:block;}
+.data-financial .sortable th:first-child button::before {content: "";font-size:0;display:inherit;}
+.data-financial .sortable th:first-child button span::after {content: "";font-size:1.3rem;position:relative; top:5px;color:transparent;}
+.data-financial .sortable th:first-child button:hover span::after, .data-financial .sortable th:first-child button:focus span::after {color: #147DAD;content: "\02C4";font-weight:bold;font-size:1.3rem;position:relative; top:5px;right:-3px;}
+.data-financial .sortable th:first-child button.dir-d span::after {color: #147DAD;content: "\02C4";font-weight:bold;font-size:1.3rem;position:relative; top:5px;right:-3px;}
+.data-financial .sortable th:first-child button.dir-u span::after {color: #147DAD;content: "\02C5";font-weight:bold;font-size:1.3rem;position:relative; top:5px;right:-3px;}
+
+.data-financial .sortable th:last-child button {text-align:right;}
+.data-financial .sortable th:last-child button:last-child span {color:#707070;}
+.data-financial .sortable th:last-child button::before {content: "";font-size:1.3rem;position:relative; top:5px;color:transparent;}
+.data-financial .sortable th:last-child button:hover::before, .data-financial .sortable th:last-child button:focus::before {color:#147DAD;content: "\02C4";font-weight:bold;font-size:1.3rem;position:relative; top:5px;}
+.data-financial .sortable th:last-child button.dir-d::before {color:#147DAD;content: "\02C4";font-weight:bold;font-size:1.3rem;position:relative; top:5px;}
+.data-financial .sortable th:last-child button.dir-u::before {color:#147DAD;content: "\02C5";font-weight:bold;font-size:1.3rem;position:relative; top:5px;}
+.data-financial .sortable tbody a:link {font-weight:bold;display:inline;padding:20px 20px 20px 12px;}
+
+.data-financial .sortable tbody a::after {content:"";margin:5px 0 0 3px;position:absolute;height:.8rem;width:.9rem;background: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 512 512' version='1.1' viewBox='0 0 512 512' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='184.65' y='322.35' width='21.603' height='21.604' fill='%23147DAD'/%3E%3Crect x='218.49' y='322.35' width='21.604' height='21.604' fill='%23147DAD'/%3E%3Crect x='252.33' y='322.35' width='21.603' height='21.604' fill='%23147DAD'/%3E%3Cpath d='m501.73 0h-438.05v113.75h-53.411v398.25h438.04v-113.75h53.414v-398.25h-1e-3zm-405.18 32.862h306.26v27.912h-306.26v-27.912zm-53.411 113.75h306.26v27.912h-306.26v-27.912zm372.32 332.53h-372.32v-271.76h372.32v271.76zm-33.202-304.62v-27.912h33.201v27.912h-33.201zm86.615 190.87h-20.553v-251.64h-351.77v-20.11h372.32v271.75zm0-304.62h-33.201v-27.911h33.201v27.911z' fill='%23147DAD'/%3E%3C/svg%3E") no-repeat right top / .7rem;}
+.data-financial .sortable tbody td:last-child {text-align: right;padding:12px;}
+.data-financial .sortable tbody td div:last-child {font-size:.9rem}
+.data-financial .sortable tbody td .pos {color:#33844A;}
+.data-financial .sortable tbody td .neg {color:#EC0417;}
+
+.data-financial .sortable tfoot button.get-more {width:100%;text-align:center;display:block;padding:1.3rem 0;font-weight:400;font-size:1rem;color:#147DAD;}
+.data-financial .sortable tfoot button.get-more:focus {text-decoration: underline;}

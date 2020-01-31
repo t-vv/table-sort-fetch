@@ -1,0 +1,57 @@
+<main>
+	<h1>My Account</h1>
+
+	<div class="data-financial">
+		<table class="sortable">
+			<caption>Financial details:</caption>
+			<thead>
+				<tr>
+					<th>
+						<button aria-describedby="th-sorting-a">
+                    <span>Account</span>
+                  </button>
+					</th>
+					<th>
+						<button class=" dir-d " aria-describedby="th-sorting-num">
+                    Available Cash
+                    <span>Today's Change</span>
+                  </button>
+					</th>
+				</tr>
+			</thead>
+			<tbody role="region">
+				<tr>
+					<td><a href="https://www.yahoo.com/" target="_blank" class="sort" aria-describedby="link-new-window">IRA - 5200 </a></td>
+					<td>
+						<div class="sort">$5,763.36</div>
+						<div class="neg">-0.08% / $8,916.69</div>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://www.yahoo.com/" target="_blank" class="sort" aria-describedby="link-new-window">AAA - 1812</a></td>
+					<td>
+						<div class="sort">$2,010,926.10</div>
+						<div class="pos">+0.21% / $38,881.63</div>
+					</td>
+				</tr>
+				<tr>
+					<td><a href="https://www.yahoo.com/" target="_blank" class="sort" aria-describedby="link-new-window">AAA - 3810</a></td>
+					<td>
+						<div class="sort">$10,050,054.07</div>
+						<div class="pos">+0.07% / $8,916.69</div>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">
+            <button class="get-more">Load more accounts</button>
+          </td>
+				</tr>
+			</tfoot>
+		</table>
+    <div id="link-new-window" class="sr-only hidden" aria-hidden="true">- opens in a new window</div>
+    <div id="th-sorting-a" class="sr-only hidden" aria-hidden="true">- sorts the region's left column alphabetically</div>
+    <div id="th-sorting-num" class="sr-only hidden" aria-hidden="true">- sorts the region's right column numerically</div>
+	</div>
+</main>
